@@ -1,0 +1,83 @@
+<resources>
+    <string name="app_name">TutorialApp</string>
+    <dimen name="textsize">15sp</dimen>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Definitionandroid">Andy Rubin Founded Android in United States in October, 2003.
+        17th August 2005, Google acquired android Incorporation.The key employees of Android Incorporation are Andy Rubin,
+        Rich Miner, Chris White and Nick Sears. \nAndroid is Mobile Operating System Developed by Google,
+        based on the Linux kernel and designed primarily for touchscreen mobile devices such as smartphones and tablets.
+        It is developed by Google and later the OHA (Open Handset Alliance).
+        Java language is mainly used to write the android code even though other languages can be used.</string>
+
+    <string name="manifestsdef">Manifest File is used to give Permissions and use to store
+        all Activity name data.Manifest file keep all the record of app.it contains- \n\n1-Package name
+        \n2-Permission \nIt Registered all the Activities.</string>
+
+    <string name="viewgroupdef">View Group is a object which is used for holding different components in different manner.
+\nexample:- \nLinearLayout , \nRelativeLayout , \nFrameLayout ,\nTableLayout ,\nConstraintLayout etc.</string>
+
+    <string name="viewdef">View Objects are use in User Interface elements in Android.We use Views to Create UI.
+        View is refers to the <b>android.view.View</b> class.This is the Base Class of All UI classes.</string>
+
+    <string name="intentfilterdef">It will define the Launching Activity.
+        \nIn other word it will tell which Activity will be Launched for the First Time when user
+        will start the application.</string>
+    <!-- second line-->
+    <string name="activitylifecycledef">1-onCreate\nInitialize the Object.\n
+                \n2-onStart\nStart the Activity on Screen at this Time user can not interact with Activity.\n
+                \n3-onResume\nUser see the Activity on Screen and Interact with Activity.\n
+                \n4-onPause\nIt Partially Hide the Activity.\n
+                \n5-onStop\nIt Completely Hide the Activity\n
+                \n6-onDestroy\nObject is Destroyed.</string>
+
+    <string name="activitydef">When user is click on app then the Screen we see is called Activity.
+            User can put ViewGroup,Views etc. on Activity.\nAn app is a set of many Activity.</string>
+
+    <string name="fragmentdef">A Fragment is a piece of an application user interface or behavior that can be placed in an Activity which enable more modular
+          activity design. It will not be wrong if we say,a fragment is a kind of sub-acitivity.
+    \nWe creates Fragments in both XML and Java.but if you want Fragment is changed at run-time then use Fragments in Java.
+        \n\n<b>Fragment Manager :</b>\nA Fragment Manager keeps the Records of all Fragments.It manages References of all Fragments.
+        \nIt Handles transactions betwween Fragments.A transaction is a way to add, replace, remove the Fragments.
+        \n\nEvery Activity has its own Fragment Mananger. getSupportFragmentManger() is used to access the All Fragments references.
+        for access a reference of particular Fragment we use <i>findFragmentById() or findFragmentByTag().</i>
+        \n\n<b>Fragment Transactions :</b>Use to add, replace and removing the Fragments at Run-time on UI.\n\n<b><u>Fragments in Java</u></b>
+        \n<i>Recommended</i> use <i>replace instead of add</i>.if we use add then container should be want empty every-time.Container is a ViewGroup.Fragment is add on this container.
+        \nexample:- LinearLayout,RelativeLayout.
+     \n<b>Syntex :</b> \nFragmentManager fm=getSupportFragmentManager();
+                       \nFragmentTransaction ft=fm.beginTransaction();
+                       \nft.replace(R.id.container,new FragA());
+                       \nft.commit();
+    </string>
+
+    <string name="fraglifecycle"> onAttach()\nAttach the Fragment on Activity.
+        \n\nonCreate\nCreate the Object.\n\nonCreateView\nInitialize the View of Fragment.
+        \n\nonActivityCreated\nFragment is ready to show Views on Activity.\n\nonStart\nMakes the Fragment visible to the
+        User Based on its Activity.\n\nonResume\nUser is Interact with the Fragment.Fragment is show on our Screen on Activity.
+        \n\nonPause\nUser is not Interact with Fragment because its activity is Paused.means Partially Hide.
+        \n\nonStop\nFragment is not Visible because its activity is Stopped or Completely Hide.
+        \n\nonDestroyView\nAllows Fragment to Clean up resources associated with its View.
+        \n\nonDestroy\nDestroy the object on Fragment.
+        \n\nonDettach\nDettach the Fragment to its Activity.</string>
+
+    <string name="commfragdef">We use Interface class For Communication.But remember we Do not communicate directly
+    Fragment to Fragment we First move Data Fragment to Activity then Activity to Fragment.</string>
+
+    <string name="intentdefinition">Intent is like a messenger which helps us to move one component to any other component.
+    Means help us to move one Activity to another Activity.\nPackage manager is helps us in Intent to move Activity.
+    \n\nTwo types:-\n\n1-Explicit Intent.\n2-Implicit Intent.</string>
+
+    <string name="intenttypes">1-Explicit Intent:-\nExplicit intent is the intent in which we know the destination Class.
+        \n\nSyntex:- \nIntent i =new Intent(current class.this, Destination class.class);
+        \nstartActivity(i);
+    \n\n2-Implicit Intent:-\nImplicit intent is that intent which do not know the destination class but knows
+        about the action to be performed.\n\nExample:-\nopening camera ,google map ,media player ,browser etc.
+        \n\nSyntex:-\nIntent i=new Intent(ACTION);
+        \nor\nIntent i=new Intent(ACTION_DATA);</string>
+
+    <string name="marginpadddef">Margin:-\nMargin is a outer gap between  boundary of component &amp; its neighbour.
+            \n\nPadding:-\nPadding is a inner gap between  boundary of component &amp; its content.</string>
+
+    // widgets information
+
+</resources>

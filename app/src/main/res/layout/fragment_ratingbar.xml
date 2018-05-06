@@ -1,0 +1,24 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.skrajput.tutorialapp.RatingbarFragment">
+
+   <RatingBar
+       android:id="@+id/ratingbar"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:numStars="5"
+       android:layout_centerInParent="true"
+       android:background="#d0ff00"/>
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:background="#f00"
+        android:layout_below="@id/ratingbar"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff0"
+    tools:context="com.example.skrajput.tutorialapp.MainList">
+
+<GridView
+    android:id="@+id/list1"
+    android:layout_margin="5dp"
+    android:background="#1affe0"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:numColumns="2">
+
+</GridView>
+
+</LinearLayout>
